@@ -1,13 +1,30 @@
-export default function Pakistan() {
+import Link from 'next/link';
 
+export default function Pakistan() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 p-6">
             <div className="max-w-2xl w-full bg-white rounded-lg shadow-md p-6">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">Iran</h1>
-                <div className="font-semibold">Name : Pakistan</div>
-                <div className="font-semibold">Population : 241492197</div>
-                <div className="font-semibold">Capital : Islamabad</div>
+                <header className="mb-6 text-center">
+                    <h1 className="text-3xl font-bold text-blue-600" aria-label="Pakistan">Pakistan</h1>
+                </header>
+                <section className="space-y-4">
+                    <div className="font-semibold text-gray-800">
+                        <span className="font-medium">Name:</span> Pakistan
+                    </div>
+                    <div className="font-semibold text-gray-800">
+                        <span className="font-medium">Population:</span> 241,492,197
+                    </div>
+                    <div className="font-semibold text-gray-800">
+                        <span className="font-medium">Capital:</span> Islamabad
+                    </div>
+                </section>
+
+                {/* Back to Countries Link */}
+                <div className="mt-6 text-center">
+                    <Link href="/" aria-label="Go back to countries list" className="inline-block text-blue-600 hover:text-blue-800 font-semibold px-4 py-2 border border-blue-600 rounded-md hover:bg-blue-50"> Go Back to Countries List
+                    </Link>
+                </div>
             </div>
         </div>
-    )
+    );
 }

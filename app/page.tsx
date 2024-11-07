@@ -8,7 +8,7 @@ export default function Home() {
 
         <ul className="list-disc list-inside space-y-2 text-gray-700">
           <li >
-            <Link className="text-gray-800 hover:text-blue-800 " href="/country/pakistan">Pakistan</Link>
+            <Link className="text-gray-800 hover:text-blue-800 " href="./country/pakistan">Pakistan</Link>
           </li>
           <li>
             <Link className="text-gray-800 hover:text-blue-800" href="/country/turkey">Turkey</Link>
